@@ -55,7 +55,7 @@ const embedTemplates: {[key:string]:Function} = {
   },
   "sc": (embedLink:string) => {
     return `
-    <iframe style="width: 20rem;" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${embedLink}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <iframe class="soundsloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${embedLink}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
     `
   }
 }
@@ -79,10 +79,11 @@ const worksGallery: Image[] = [
     alt: "Banner design with LOCK from Raise A Suilen"
   },{
     url: "https://cdn.discordapp.com/attachments/1027882514548789279/1027882862738944061/iyashikei.png",
-    alt: "An infographic explaining the Iyashikei genre. Using Rin Shima from Yuru Camp as an example"
+    alt: "An infographic explaining the Iyashikei genre, using Rin Shima from Yuru Camp as an example"
   }
 ]
 
+// test gallery. will keep for old times sake. long live best girl fire hydrant
 const girlGallery: Image[] = [
   {
     url: "https://i.bandori.party/u/c/art/a/2081Tomoe-Udagawa-Pure-HappyHalloween-YGQxKY.png",

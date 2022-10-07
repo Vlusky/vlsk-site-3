@@ -12,9 +12,9 @@
 }
 
 @keyframes sidebar-enter {
-  0% {transform: translateY(0rem);}
-  50% {transform: translateY(0rem);}
-  100% {transform: translateY(-2rem);}
+  0% {transform: rotate(90deg) translateY(0rem);}
+  50% {transform: rotate(90deg) translateY(0rem);}
+  100% {transform: rotate(90deg) translateY(-2rem);}
 }
 
 ::-moz-scrollbar-button, ::-webkit-scrollbar-button {
@@ -27,9 +27,7 @@
   line-height: 24px;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #757575;
+  color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -52,8 +50,8 @@ html, body {
   top: 0; /* Stay at the top */
   
   transform-origin: 0 0;
-  rotate: 90deg;
-  transform: translateY(-2rem);
+  
+  transform: rotate(90deg) translateY(-2rem);
   text-align: left;
 
   font-size: 2rem;
@@ -67,6 +65,7 @@ html, body {
   font-size: 1.5rem;
   font-family: 'Roboto Mono', monospace;
   text-shadow: 2px 2px 4px black;
+  color: white;
 
   letter-spacing: 0.2rem;
   left: 50%;
@@ -144,15 +143,11 @@ html, body {
   text-align: justify;
 }
 
-.not-home h1 {
+.not-home p, h1 {
   width: 80%;
   text-shadow: 2px 2px 4px black;
 }
 
-.not-home p {
-  width: 80%;
-  text-shadow: 2px 2px 4px black;
-}
 
 .gallery {
   background-color: rgb(41, 41, 41);
@@ -177,7 +172,7 @@ html, body {
 
 .image-gallery {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   margin-left: 2rem;
   margin-bottom: 2rem;
   box-shadow: 2px 2px 10px black;
@@ -198,6 +193,10 @@ html, body {
 
 .gallery-element iframe {
   width: 35.55rem;
+}
+
+#music-gallery iframe {
+  width: 20rem;
 }
 
 .gallery-element p {
@@ -229,19 +228,13 @@ html, body {
 .tooltip {
   z-index: 1;
   text-align: left;
+  color: rgba(255, 255, 255, 0.8);
   position: absolute;
   visibility: hidden;
   margin-left: 2rem;
   opacity: 0;
   transition: 0.2s;
 }
-
-@media (max-width: 1100px)  {
-  .tooltip {
-    visibility: hidden !important
-  }
-}
-
 
 #links button {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
@@ -251,6 +244,7 @@ html, body {
   max-width: 20rem;
   border: none;
   box-shadow: 2px 2px 4px black;
+  color: white;
   
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.616);
@@ -271,4 +265,48 @@ html, body {
   visibility: visible;
   margin-left: 0.2rem;
   opacity: 1;
+}
+
+
+@media (max-width: 1100px)  {
+  .tooltip {
+    visibility: hidden !important
+  }
+}
+
+@media (max-width: 770px) {
+  .not-home {
+    display: block;
+  }
+  
+  .not-home p, h1 {
+    width: calc(100% - 6rem);
+    margin-left: 3rem;
+  }
+
+  .image-gallery {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .gallery h1 {
+    padding-left: 1rem;
+    text-align: center;
+  }
+
+  .gallery-element img {
+    width: 95%;
+    height: auto;
+  }
+
+  .gallery-element iframe {
+    width: 95%;
+    min-height: 50vw;
+  }
+
+  #music-gallery iframe {
+    width: 95%;
+    height: 10rem;
+  }
+  
 }
