@@ -60,25 +60,25 @@ const embedTemplates: {[key:string]:Function} = {
   }
 }
 
-// files are accessed through the index.html file. write directory one level lower (include ./src/ in there)
+// using discord as the CDN because i don't trust myself (also it's faster anyways)
 const worksGallery: Image[] = [
   {
-    url: "./src/assets/works/ruins.png",
+    url: "https://cdn.discordapp.com/attachments/1027882514548789279/1027882865020645396/ruins.png",
     alt: "An aftermath from an ongoing war, that looks suspicioulsy like the empty SEKAI from Project Sekai"
   },{
-    url: "./src/assets/works/crystals.png",
+    url: "https://cdn.discordapp.com/attachments/1027882514548789279/1027882862218858526/crystals.png",
     alt: "A render of a bunch of crystals in the air"
   },{
-    url: "./src/assets/works/pastel-dark.png",
+    url: ".https://cdn.discordapp.com/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
     alt: "Cityline with a looming energy diamond in the background"
   },{
-    url: "./src/assets/works/tomoe-poly.png",
+    url: "https://cdn.discordapp.com/attachments/1027882514548789279/1027882865846915102/tomoe-poly.png",
     alt: "Banner design with Tomoe Udagawa in polygonal style"
   },{
-    url: "./src/assets/works/lock-banner.png",
+    url: "https://cdn.discordapp.com/attachments/1027882514548789279/1027882863208706059/lock-banner.png",
     alt: "Banner design with LOCK from Raise A Suilen"
   },{
-    url: "./src/assets/works/iyashikei.png",
+    url: "https://cdn.discordapp.com/attachments/1027882514548789279/1027882862738944061/iyashikei.png",
     alt: "An infographic explaining the Iyashikei genre. Using Rin Shima from Yuru Camp as an example"
   }
 ]
