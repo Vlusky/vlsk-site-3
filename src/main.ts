@@ -69,7 +69,7 @@ const worksGallery: Image[] = [
     url: "https://cdn.discordapp.com/attachments/1027882514548789279/1027882862218858526/crystals.png",
     alt: "A render of a bunch of crystals in the air"
   },{
-    url: ".https://cdn.discordapp.com/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
+    url: "https://cdn.discordapp.com/attachments/1027882514548789279/1027882863984652289/pastel-dark.png",
     alt: "Cityline with a looming energy diamond in the background"
   },{
     url: "https://cdn.discordapp.com/attachments/1027882514548789279/1027882865846915102/tomoe-poly.png",
